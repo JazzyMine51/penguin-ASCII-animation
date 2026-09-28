@@ -11,14 +11,14 @@ const render = async (element, animation) => {
         // first step
         for (let index = 0; index < animation.step_end_index; index++) {
             element.innerHTML = animation.frames[index];
-            await delay(1000);
+            await delay(500);
         }
 
         // 2nd step, repeat forever
         while (true) {
             for (let index = animation.step_end_index; index < animation.frames.length; index++) {
                 element.innerHTML = animation.frames[index];
-                await delay(1000);
+                await delay(500);
             }
         }
     }
@@ -27,7 +27,7 @@ const render = async (element, animation) => {
         while (true) {
             for (let index = 0; index < animation.frames.length; index++) {
                 element.innerHTML = animation.frames[index];
-                await delay(1000);
+                await delay(500);
             }
         }
     }
