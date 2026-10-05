@@ -1,6 +1,6 @@
 html {
     background-color: #FAF6CE;
-    color: #191624;
+    color: #000000;
     font-family: "Roboto Mono", monospace;
     font-weight: bolder;
 }
@@ -8,4 +8,5 @@ html {
 .animate {
     white-space: pre-wrap;
     font-size: 50%;
+    font-size: clamp(0.3em, 0.5vw, 0.5em);
 }
